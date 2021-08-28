@@ -2,14 +2,16 @@ import React from 'react';
 import Row from './Row';
 import requests from './requests';
 import Banner from './Banner';
+import "./App.css";
 
 function App() {
   return (
-    <div className="container">
+    <div className="app">
       
       <Banner />
 
-      <Row title ="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} 
+      <Row 
+      title ="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} 
       isLargeRow={true}  
       />
       <Row title ="Trending Now" fetchUrl={requests.fetchTrending} />
